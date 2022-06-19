@@ -1,19 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 body {
     padding: 0;
     margin: 20px 0 0 0;
+    background-color: #eebaa5;
 }
-.container {
+.section-content {
     position: absolute;
-    background-color: rgb(233, 232, 232);
+    background-color: rgb(255, 255, 255);
     max-width: 500px;
     min-width: 300px;
     width: 50%;
-    margin: auto;
-    height: 500px;
+    height: 100%;
     top: 0;
-    bottom: 0;
-    left: 0;
     right: 0;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+h1 {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 30%;
+}
+h3 {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #636262;
+}
+.section-img{
+    width: 50%;
+    height: auto;
+}
+#icon-churrasqueira {
+    display: block;
+    max-width: 300px;
+    min-height: 300px;
+    margin: auto;
 }
 .content {
     position: absolute;
@@ -31,11 +55,13 @@ body {
 }
 .inputData {
     display: block;
+    background-color: rgb(218, 218, 218);
     margin: auto;
     margin-top: 10px;
     width: 80%;
     padding: 10px;
     border: none;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -113,5 +139,60 @@ input[type=number] {
 @media (max-width: 600px) {
     .content {
         font-size: 0.4em;   
+    }
+    .section-content {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        max-width: 50%;
+        min-width: 50%;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+    h1 {
+        font-size: 1.3em;
+        padding: 10px;
+    }
+    h3{
+        font-size: 0.6em;
+    }
+    .section-img{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+    #icon-churrasqueira {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 200px;
+        min-height: 200px;
+        
+    }
+}
+@media (max-width: 400px) {
+    #icon-churrasqueira {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 150px;
+        min-height: 150px;
+        
+    }
+    .inputData, #calcButton{
+        font-size: 0.9em;
     }
 }
