@@ -3,13 +3,17 @@ body {
     margin: 20px 0 0 0;
 }
 .container {
-    position: relative;
+    position: absolute;
     background-color: rgb(233, 232, 232);
     max-width: 500px;
     min-width: 300px;
     width: 50%;
     margin: auto;
     height: 500px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .content {
     position: absolute;
@@ -68,8 +72,9 @@ body {
 .modal {
     position: relative;
     width: 55%;
-    height: 55%;
+    height: auto;
     min-width: 300px;
+    max-width: 500px;
     background: white;
     text-align: center;
     border-radius: 5px;
@@ -106,4 +111,9 @@ li {
 }
 .fecha-modal{
     display: none;
+}
+@media (max-width: 600px) {
+    .content {
+        font-size: 0.4em;   
+    }
 }
