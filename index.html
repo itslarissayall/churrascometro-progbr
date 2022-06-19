@@ -16,20 +16,20 @@
             <h1>
                 Churrascômetro
             </h1>
-            <input type="number" class="inputData" placeholder="Adultos" id="adultos"> 
-            <input type="number" class="inputData" placeholder="Crianças" id="criancas">
-            <input type="number" class="inputData" placeholder="Tempo (h)" id="tempo">
+            <input type="number" class="inputData" placeholder="Adultos" id="adults"> 
+            <input type="number" class="inputData" placeholder="Crianças" id="kids">
+            <input type="number" class="inputData" placeholder="Duração (h)" id="time">
             <input type="button" class="inputData" id="calcButton" value="Calcular" onclick="calc()">
         </div>
     </div>
-    <div class="modal-container fecha-modal" id="modal-result">
+    <div class="modal-container close-modal" id="modal-result">
         <div class="modal">
-            <input type="button" value="X" class="btn-fechar" onclick="closeModal()">
+            <input type="button" value="X" class="btn-closer" onclick="closeModal()">
             <h3>O resultado do calculo é:</h3>
             <ul>
-                <li id="carne">..</li>
-                <li id="cerveja">..</li>
-                <li id="refrigerante">..</li>
+                <li id="meat"></li>
+                <li id="beer"></li>
+                <li id="soda"></li>
             </ul>
         </div>
     </div>

@@ -46,16 +46,6 @@ body {
     text-transform: uppercase;
     background-color: red;
 }
-.result {
-    position: absolute;
-    background-color: rgb(217, 223, 223);
-    width: 80%;
-    height: 100px;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 .modal-container {
     position: fixed;
     width: 100%;
@@ -91,7 +81,7 @@ li {
     list-style: none;
     padding: 10px;
 }
-.btn-fechar {
+.btn-closer {
     position: absolute;
     top: 0;
     right: 0;
@@ -100,7 +90,7 @@ li {
     background-color: white;
 }
 
-.btn-fechar:hover {
+.btn-closer:hover {
     position: absolute;
     color: gray;
     top: 0;
@@ -109,8 +99,16 @@ li {
     border: none;
     background-color: white;
 }
-.fecha-modal{
+.close-modal{
     display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
 }
 @media (max-width: 600px) {
     .content {
