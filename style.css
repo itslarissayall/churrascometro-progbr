@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.container {
+    position: relative;
+    background-color: rgb(233, 232, 232);
+    max-width: 500px;
+    min-width: 300px;
+    width: 50%;
+    margin: auto;
+    height: 500px;
+}
+.content {
+    position: absolute;
+    color: rgb(22, 23, 24);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.inputData {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#calcButton {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: red;
+}
+.result {
+    position: absolute;
+    background-color: rgb(217, 223, 223);
+    width: 80%;
+    height: 100px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal {
+    position: relative;
+    width: 55%;
+    height: 55%;
+    min-width: 300px;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+} 
+ul {
+    padding: 0;
+} 
+li {
+    display: block;
+    text-align: initial;
+    list-style: none;
+    padding: 10px;
+}
+.btn-fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: none;
+    background-color: white;
+}
+
+.btn-fechar:hover {
+    position: absolute;
+    color: gray;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: none;
+    background-color: white;
+}
+.fecha-modal{
+    display: none;
+}
